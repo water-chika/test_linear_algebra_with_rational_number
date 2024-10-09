@@ -2,11 +2,11 @@ cmake_minimum_required(VERSION 3.20)
 
 project(test_linear_algebra_with_rational_number)
 
-add_subdirectory(linear_algebra)
+add_subdirectory(linear_algebra_test)
 add_subdirectory(rational_number)
 
 add_executable(test_linear_algebra_with_rational_number
     main.cpp)
 
 set_target_properties(test_linear_algebra_with_rational_number PROPERTIES CXX_STANDARD 23)
-target_link_libraries(test_linear_algebra_with_rational_number PUBLIC linear_algebra rational_number)
+target_link_libraries(test_linear_algebra_with_rational_number PUBLIC linear_algebra_test rational_number)
